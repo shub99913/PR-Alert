@@ -1,0 +1,60 @@
+{
+  "name": "disaster-alert-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "test": "node test-engines.js"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.0",
+    "@react-native-async-storage/async-storage": "1.21.0",
+    "@react-native-community/netinfo": "11.1.0",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "expo": "~50.0.15",
+    "expo-constants": "~15.4.6",
+    "expo-dev-client": "~3.3.12",
+    "expo-device": "~5.9.4",
+    "expo-image-picker": "~14.7.1",
+    "expo-location": "~16.5.5",
+    "expo-media-library": "~15.4.1",
+    "expo-notifications": "~0.27.6",
+    "expo-secure-store": "~12.8.1",
+    "expo-status-bar": "~1.11.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.6",
+    "react-native-gesture-handler": "~2.14.0",
+    "react-native-maps": "1.10.0",
+    "react-native-reanimated": "~3.6.2",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0",
+    "react-native-vector-icons": "^10.0.0",
+    "react-native-web": "~0.19.6",
+    "socket.io-client": "^4.8.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "expo": {
+    "plugins": [
+      "expo-location",
+      "expo-image-picker",
+      "expo-notifications",
+      "expo-media-library",
+      [
+        "react-native-maps",
+        {
+          "android": {
+            "googleMapsApiKey": "[REDACTED_GOOGLE_MAPS_API_KEY]"
+          }
+        }
+      ]
+    ]
+  }
+}

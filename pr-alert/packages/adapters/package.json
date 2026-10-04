@@ -1,0 +1,30 @@
+{
+  "name": "@pr-alert/adapters",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@pr-alert/core": "^0.1.0",
+    "@pr-alert/schemas": "^0.1.0",
+    "@pr-alert/geospatial": "^0.1.0",
+    "axios": "^1.7.2",
+    "rss-parser": "^3.13.0",
+    "xml2js": "^0.6.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.2.0",
+    "eslint": "^8.57.0",
+    "@types/xml2js": "^0.4.14"
+  }
+}

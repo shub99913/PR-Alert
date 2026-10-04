@@ -1,0 +1,1148 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"> -->
+<!DOCTYPE html>
+<head>
+
+ 
+<!-- header.inc Start February 11 2025 16:51:46 -->
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<!-- <meta http-equiv="Content-Security-Policy" content= "default-src 'self' 'unsafe-inline' 'unsafe-eval';font-src 'self' data: blob;script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com;connect-src 'self' https://services.arcgisonline.com/ *.arcgis.com/;img-src 'self' *.arcgisonline.com/ *.google-analytics.com www.tsunami.gov;style-src 'self' 'unsafe-inline' *.arcgis.com/;"> -->
+
+<title>U.S. Tsunami Warning Centers</title>
+
+<meta name="DC.title" content="National Weather Service - Tsunami Hazards" />
+<meta name="DC.description" content="Your official U.S. government weather forecasts, warnings, meteorological products for forecasting the weather, tsunami hazards, and information about seismology." />
+<meta name="DC.keywords" content="Weather, Tsunami, Seismic" />
+<meta name="DC.rating" content="General" />
+<meta name='DC.subject' content='Weather, Warnings, National Oceanic Atmospheric Administration, Tsunami, Seismic' />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.Distribution" content="Global" />
+<meta name="DC.robot" content="all" />
+<meta name="DC.creator" content="National Weather Service" />
+<meta name="DC.contributor" content="Tsunami Program" />
+<meta name="DC.robots" content="index,follow" />
+<!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes, width=device-width" />-->
+<meta name="viewport" content="user-scalable=yes, width=device-width" />
+
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<!--<meta http-equiv="refresh" content="30"> -->
+<link href="/images/favicon.ico" rel="shortcut icon" />
+
+<script type="text/javascript" src="/events/js/previous.js"></script>
+
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/jquery.tabelizer.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/js/jquery.metadata.min.js"></script>  
+<!--<script type="text/javascript" src="/events/js/previousBulletins.js"></script>-->
+
+<!-- Required DAP -->
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA" id="_fed_an_ua_tag"></script>
+
+
+<link href="/css/tabelizer.css" rel="stylesheet">
+
+
+  
+   <link rel="stylesheet" type="text/css" href="/css/main.css" />
+   <script type="text/javascript" src="/events/js/tidegauge-min.js"></script>
+   <script type="text/javascript" src="/events/js/ndbcmapstations-min.js"></script>
+
+
+<link href="/css/menu-vertical.css" rel="stylesheet" type="text/css" />
+<script src="/js/menu-vertical.js" type="text/javascript"></script>
+
+
+<!--<script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script> -->
+
+<!-- header.inc End February 11 2025 16:51:46 -->
+
+<!-- TJK toggle courtesy of http://www.tjkdesign.com/articles/toggle_elements.asp -->
+   <script type="text/javascript" src="/TJK_ToggleDL/TJK_ToggleDL.js"></script>
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL.css" media="print" />
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL_ie5mac.css" media="print" />
+
+
+  
+<!--   <link rel="stylesheet" href="/arcgis_js_api/library/3.46/3.46/esri/css/esri.css">-->
+   <link rel="stylesheet" href="https://js.arcgis.com/3.46/dijit/themes/claro/claro.css">
+   <link rel="stylesheet" href="https://js.arcgis.com/3.46/esri/css/esri.css">
+   <link rel="stylesheet" href="/css/esriPopup.css">
+   <script type="text/javascript" src="/js/timedate.js"></script>
+   <script type="text/javascript" src="/js/PQuakeFL.js"></script>
+<!--   <script type="text/javascript" src="/arcgis_js_api/library/3.46/3.46/init.js"></script>-->
+   <script type="text/javascript" src="https://js.arcgis.com/3.46/"></script>
+   
+   <script type="text/javascript" src="/events/js/previous.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+<div id="maincontainer">
+
+<!-- banner.inc start February 11 2025 16:51:46 -->
+
+<div id="header">
+<img src="../images/nws_914_titlebar_cropped.jpg" alt="Tsunami Warning System" border="0" style="float: left; box-sizing: border-box;">
+<img src="../images/menuBarBackground.jpg" class="menu_bar_filler">
+
+<!--<div class="skiplinks"><a  target="_blank" href="#contents" class="skipnav" accesskey="2">Jump to main content</a>&nbsp;<a  target="_blank" href="http://www.weather.gov" title="Go to the NWS Homepage">weather.gov</a></div>
+-->
+<div id="noaalink">United States Department of Commerce<a  target="_blank" href="http://www.noaa.gov"><img src="/images/noaalink.gif" alt="Go to the NOAA Homepage"width="80" height="84" style="position: absolute; left: 0; top: 0;"/></a>
+
+<span class="title_small">NOAA / National Weather Service<br/></span>
+<span class="title_large">U.S. Tsunami Warning System</span>
+<!--<span class="title_sub">National Tsunami Warning Center and Pacific Tsunami Warning Center</span>-->
+
+<!--<div id="nwslink"><a  target="_blank" href="http://www.weather.gov/"><img src="/images/noaalink.gif" alt="NWS Homepage" width="80" height="80" /></a></div>-->
+</div>
+<a  target="_blank" href="https://www.weather.gov/"><img src="/images/nws_logo_with_bar.jpg" alt="NWS Homepage" style="position: absolute; top:0; right: 0;"/></a>
+<div id="navbar">
+  <div id="navbar_41"><a  href="/" title="Go to NTWC home page">Home</a></div>
+  <div id="navbar_42"><a  target="_blank" href="https://www.weather.gov/contact-media/" title="NWS news of the day">News</a></div>
+  <div id="navbar_43"><a  target="_blank" href="https://www.weather.gov/organization/" title="Links to NWS Offices">Organization</a></div>
+  <div id="navbar_44"><form method="get" action="https://search.usa.gov/search"><div>
+    <label for="query">Search for: <input type="text" id="query" name="query" title="" class="searchinput" size="10"/></label>
+    <input type="hidden" name="utf8" value="&#x2713;" />
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label> <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label> <input type="submit" name="commit" class="searchinputgo" value="Search" /></div></form></div>
+  </div>
+</div>
+<!-- banner.inc end February 11 2025 16:51:46 -->
+
+
+
+<!--begin main content-->
+
+<div id="container_2col">
+
+<!-- leftHandMenu.inc start February 11 2025 16:51:46 -->
+
+<div id="left_2col" style="z-index:50;">
+
+<br />
+<br />
+<br />
+<ul class="menu" id="menu-v">  
+
+	  <li><a  href="/"><img src="/images/home.png" border="0" alt="home page" /></a></li>          
+<hr style="width: 90%;">
+	  <li><a  target="_blank" href="javascript:void(0)">Products/Messages</a> 
+	    <ul>
+              <li><a  href="/php/previousEvents.php">Previous Messages</a></li> 
+ 	      <li><a  href="/?page=productRetrieval">Message Subscriptions</a></li>
+	      <li><a  href="/?page=message_definitions">Message Definitions</a></li> 
+              <li><a  href="/?page=product_list">Product List</a></li>
+	      <li><a  target="_blank" href="javascript:void(0)">Warning Criteria</a>
+			<ul>
+				<li><a  href="/images/AtlProcedureChartUpdated2025_final.pdf">Atlantic</a></li>
+				<li><a  href="/images/procChartLargePacific.gif">Pacific</a></li>
+			</ul>
+		  </li>
+	      
+ 	      <li><a  href="/?page=cap">CAP-TSU</a></li>
+ 	      <li><a  href="/?page=tex">Tsunami Event XML (TEX)</a></li>
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+	  <li><a  target="_blank" href="javascript:void(0)">Tsunami Data</a> 
+	    <ul> 
+	      <li><a  target="_blank" href="javascript:void(0)">Water-Level Data</a> 
+		<ul>
+			<li><a  target="_blank" href="https://www.ndbc.noaa.gov/dart/dart.shtml">DART Systems</a></li> 
+			<li><a  target="_blank" href="https://tidesandcurrents.noaa.gov/tsunami/">NOAA Coastal Water-Level Stations</a></li>
+			<li><a  href="javascript:void(0);" onclick="openNonGovPage('http://www.ioc-sealevelmonitoring.org/map.php');">IOC Sea Level Monitoring Facility</a></li>
+		</ul>
+	      <li><a  target="_blank" href="https://www.ngdc.noaa.gov/hazard/tsu.shtml">Historical Tsunamis</a></li> 
+	      <li><a  href="/recent_tsunamis/">Recent Tsunamis</a></li> 
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Education/Outreach</a> 
+	    <ul> 
+	      <li><a  href="/?page=tsunamiFAQ">Tsunami FAQ</a></li> 
+	      <li><a  href="https://www.weather.gov/safety/tsunami" target="_blank">Tsunami Safety</a></li>
+	      <li><a  href="https://www.weather.gov/safety/tsunami-outreach" target="_blank">Tsunami Education and Outreach</a></li>
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+	  <li><a href="/?page=exercises">Exercises</a></li>
+<hr style="width: 90%;">
+	  <li><a  href="/?page=info">NOAA Tsunami Program</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://www.weather.gov/tsunamiready/">TsunamiReady</a></li>
+<hr style="width: 90%;">
+	  <li><a href="/?page=itic">International Tsunami Information Center (ITIC)</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://www.weather.gov/itic-car/">ITIC Caribbean Office</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://nctr.pmel.noaa.gov/">Tsunami Research</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://nws.weather.gov/nthmp/">National Tsunami Hazard Mitigation Program</a></li>
+<hr style="width: 90%;">
+	  <li><a href="javascript:void(0);" onclick="openNonGovPage('https://tsunami.ioc.unesco.org/en');">UNESCO-IOC Tsunami Programme</a></li>
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Tsunami Warning Centers</a> 
+	  <ul>
+	  	<li><a href="/?page=history">About the Warning Centers</a></li>
+		<li><a  target="_blank" href="javascript:void(0)">Warning Guides</a>
+	    	<ul> 
+              		<li><a href="/operations/opsmanual.pdf">Canada/US except Hawaii</a></li>
+              		<li><a target="_blank" href="/operations/AmSamoaUserGuide.pdf">American Samoa</a></li>  
+              		<li><a target="_blank" href="/operations/GuamCNMIUserGuide.pdf">Guam/CNMI</a></li>
+              		<li><a target="_blank" href="/operations/PRVIUserGuide.pdf">Puerto Rico/Virgin Islands</a></li>  
+              		<li><a onclick="openNonGovPage('http://itic.ioc-unesco.org/index.php?option=com_content&view=category&layout=blog&id=1303&Itemid=1303&lang=en');" target="_blank">International Pacific</a></li>  
+              	<!--	<li><a onclick="openNonGovPage('http://www.ioc-tsunami.org/index.php?option=com_oe&task=viewDocumentRecord&docID=6354&lang=en');" target="_blank">International Caribbean</a></li>-->    
+              		<li><a href="https://www.weather.gov/media/ctwp/PDF/Users%20guide%202017.pdf" target="_blank">International Caribbean</a></li>    
+	    	</ul>
+	  	</li>
+
+
+          <li><a href="/?page=visit">Visit a Warning Center</a></li>
+
+	  </ul>
+	  </li>
+
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Follow Us!</a>
+		<ul>
+		<li><a  target="_blank" href="javascript:void(0)" style="width: 220px;">National Tsunami Warning Center</a>
+			<ul>
+			<li><a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="menu-v" border="0" height=20px; width=20px; alt="twitter" style=" vertical-align: text-bottom;" src="/images/twitter.png"/>Twitter</a>
+			</li>
+			<li><a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/facebook.png"/> Facebook</a>
+			</li>
+			<li><a target="_blank" style="color:white!important;" href="/events/xml/PAAQAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a></li>
+			<li><a  target="_blank"  style="color:white!important;" href="/events/xml/PAAQCAP.xml"><img class="Inavup" src="/images/cap_icon.png" alt="Cap File" height="16"/> CAP File</a></li>
+			</ul>
+		</li>
+		<li><a  target="_blank" href="javascript:void(0)" style="width: 220px;">Pacific Tsunami Warning Center</a>
+			<ul>
+			<li><a  target="_blank" href="https://www.twitter.com/NWS_PTWC" style="color:white!important;" target="_blank"><img class="menu-v" border="0" height=20px; width=20px; alt="twitter" style=" vertical-align: text-bottom;" src="/images/twitter.png"/>Twitter</a>
+			</li>
+			<li><a href="https://www.facebook.com/UsNwsPacificTsunamiWarningCenter"  style="color:white!important;" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/facebook.png"/> Facebook</a>
+			</li>
+			<li><a onclick="openNonGovPage('https://www.youtube.com/user/PacificTWC');" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/youtube.png"/> YouTube</a>
+			</li>
+			<li><a target="_blank" style="color:white!important;" href="/events/xml/PHEBAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a></li>
+			<li><a  target="_blank"  style="color:white!important;" href="/events/xml/PHEBCAP.xml"><img class="Inavup" src="/images/cap_icon.png" alt="Cap File" height="16"/> CAP File</a></li>
+			</ul>
+		</li>
+		</ul>
+	  </li>
+</ul>
+
+
+<br/> 
+<div style="text-align: left;">
+<!--<a target="_blank" style="color:white!important;" href="/events/xml/PAAQAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a><br/>
+<a  target="_blank"  style="color:white!important;" href="/events/xml/PAAQCAP.xml"><img class="Inavup" src="/images/xml.gif" alt="CapXML" height="16"/> CapXML</a><br/>
+<p>Follow us!<br/>
+
+NTWC
+<a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="twitter" src="/images/twitter.png"/></a>
+
+
+<a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="facebook" src="/images/facebook.png"/> </a>
+
+PTWC
+<a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="twitter" src="/images/twitter.png"/></a>
+
+
+<a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="facebook" src="/images/facebook.png"/> </a>
+-->
+</div>
+</div>
+<!--<a name="contents">&nbsp;</a> -->
+<!-- leftHandMenu.inc end February 11 2025 16:51:46 -->
+
+<!-- main_2col is where the map etc will reside -->
+<div id="main_2col"><!--<a name="contents">&nbsp;</a>-->
+<!--<div id="block-block-3"> -->
+<noscript>
+
+
+Please enable JavaScript. This page needs Javascript to function properly. <br/>
+
+
+<br/>
+   Event Magnitude 4.6 (ML) <br/>
+   Depth 12 (kilometers)<br/>
+   Lat: 43.832 Lon: -128.75<br/>
+   Origin Time: 2026-09-07T01:30:21 UTC<br/>
+   <a href="/events/PAAQ/2026/09/07/tkz06l/1/WEAK53//WEAK53.txt">view bulletin</a><br/>
+               <hr/>
+         <b>Information</b><br/>
+         This is a Tsunami Information Statement. <br/>
+     
+
+</noscript>
+
+
+<div class="content" style="">
+
+
+
+
+<!-- News -->
+<div id="infoButtonsDiv" style="border:1px solid; vertical-align: middle; padding:5px;" >
+
+	<script type="text/javascript">
+	   function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	   }
+	</script>
+	</div>
+<!-- // News -->
+
+
+
+
+
+
+	
+        <div id="statusNote">
+        <div style="border: 1px solid black;">
+        
+          <div id="statusHead" class="headOK1">No Tsunami Warning, Advisory, Watch, or Threat</div>
+	  <div id="statusHead2" class="headOK2" style="display: none;"> There is No Tsunami Warning, Advisory, Watch, or Threat in effect.</div>
+	  </div>
+          <div id="statusText" class="text"><!--<img style="float:left;margin:5px 15px 15px 0;" src="images/greenLight.png" alt="Green OK Traffic Light picture"/> -->
+                 <!-- <p style="font-size:16px; font-weight:bold; color: blue;margin: 5px 0px 10px 0px;"><a href="events/PAAQ/2026/09/07/tkz06l/1/WEAK53/WEAK53.txt">Last Event Details</a></p> -->
+         <!-- Build the text in the Warning,Watch,Advisory,Threat box -->
+	<div style="display:block;font-size:1.1em; vertical-align:top;"><b><u>Earthquake</U>:</b></div>
+
+        <!--<div style="display:inline-block;width:100px;height:1px;"></div>-->
+	<div style="display:inline-block;padding-left: 12%;">
+	<a class="info_element"><b>Magnitude:</b> 4.6 </a>
+	<a class="info_element" style="width: 61%;">
+        <b>Origin Time:</b>
+	<script type="text/javascript">document.write(getLocalOrUTC('2026-09-07T01:30:21 UTC')); </script>
+	</a><br/>
+
+	
+	<a class="info_element">
+	  
+          <b>Depth:</b> 7 mi.
+		</a>
+
+	<a class="info_element" style="width: 50%;">
+	<b>Lat:</b> 43.8&deg; N 		
+<b>Lon:</b> 128.8&deg; W	</a><br/> 
+
+	
+	<a class="info_element"  style="display:inline-block;width:700px;">
+	<b>Location:</b> off the coast of Oregon	</a>
+        </div>
+
+         </div>
+        </div>
+
+
+
+<!--<audio id="audiotag1" src="sounds/piano_chord.wav" preload="auto"></audio> -->
+
+<style>
+
+#BasemapToggle {
+	position: absolute;
+	top: 35px;
+	right: 5px;
+	z-index: 50;
+}
+
+#map_disp_zoom_slider{
+     top:70% !important;
+     left: 95%;
+}
+.esriHorizontalSlider .dijitRuleLabel{
+	font-size:9px;
+	font-weight: normal;
+
+ }
+#slider{
+	border-radius: 2px;    
+	width: 100px;  
+	height: 25px; 
+	z-index:100; 
+	position:absolute; 
+	right:5px; 
+	top:4px; 
+	text-align=middle; 
+	background-color:white;
+}
+
+</style>
+<span>Note: Times are local to your browser, unless otherwise indicated</span><span style="float:right;">See the map or table below for more information</span><br>
+<br>
+    <!-- Layers -->
+<!--    <form id="myform" action="javascript:void(0);" method="post" style="width: 400px;"> -->
+<div id="layerSelects" style="display:inline-block; width: 76%; max-width: 768px;">
+	<div class=legend_element title="The Alerts/Threats layer provides information about the coastal extent of currently active actionable alerts 
+	(warnings, advisories, watches) for the U.S., Canada, and the British Virgin Islands. It also provides 
+	information about currently active tsunami threats for international partners. See the Map FAQ for 
+	more information.">
+        <input type="checkbox" name="option1a" id="alertCB" checked="checked" value="alert" onclick="javascript:toggleTWCS()"/>
+	<label for="alertCB">Alerts/Threats </label>
+	</div>
+
+	<div class=legend_element title="The Earthquakes layer provides information about the most recent events 
+	of each product type issued in each basin for the last 10 days. 
+	See the Map FAQ for more information.">
+        <input type="checkbox" name="option6" id="latestEventCB" checked="checked" value="previous" onclick="javascript:toggleEQuakeS()"/>
+	<label for="latestEventCB">Earthquakes</label>
+	</div>
+
+
+        <br/>
+
+	<div class=legend_element title="The Previous 40 Messages layer shows the earthquakes associated with the 40 most 
+	recent messages issued by one of the U.S. Tsunami Warning Centers.">
+        <input type="checkbox" name="previousEvents" id="previousEventsCB" value="previousEvents" onclick="javascript:togglePreviousEvents()"/>
+	<label for="previousEventsCB">Previous 40 Messages</label>
+	</div>
+
+	<div class=legend_element title="If a tsunami is observed, the Observations layer provides information about the 
+	observations, including location, height, and time and date of observation. 
+	For more comprehensive information, click on the Observations and Forecasts 
+	link below the map.">
+        <input type="checkbox" name="option3" id="obsCB" value="WCATWClabs" onclick="javascript:toggleObsMain()"/><label for="obsCB">Observations</label>
+	</div>
+
+	<div class=legend_element title="If forecasts have been issued by a U.S. Tsunami Warning Center, the Forecasts 
+	layer provides information about each forecast, including location, forecasted 
+	arrival date and time (default browser time), and forecasted wave height. For more 
+	comprehensive forecast information, click on the Observations and Forecasts link 
+	below the map.">
+        <input type="checkbox" name="fcst" id="fcstCB" value="fcst" onclick="javascript:toggleFcstMain()"/><label for="fcstCB">Forecasts</label>
+	</div>
+
+	<div class=legend_element title="The Water-Level Stations layer provides information about coastal 
+	water-level stations around the world, including location and, 
+	for U.S. stations, links to water-level data.">
+        <input type="checkbox" name="tidegauge" id="tidegaugeCB" value="tide" onclick="javascript:toggleTideGauge()"/><label for="tidegaugeCB">Water-Level Stations</label>
+	</div>
+
+	<div class=legend_element title="The DART Systems layer provides information about Deep-ocean Assessment 
+	and Reporting of Tsunami (DART) systems worldwide, including 
+	location and links to water-level data.">
+        <input type="checkbox" name="dartbuoy" id="dartbuoyCB" value="tide" onclick="javascript:toggleDartBuoy()"/><label for="dartbuoyCB">DART Systems</label>
+	</div>
+<!--
+	<div class=legend_element title=" If a tsunami is expected, the Travel Time layer shows travel time 
+	contours in one-hour increments for the entire basin involved.">
+        <input type="checkbox" name="ttlbox" id="traveltimeCB" onclick="javascript:toggleTravelTimeLayer()"/><label for="travelTimeCB">Travel Time</label>
+	</div>
+-->
+</div> <!-- id="layerSelects" -->
+<!-- <div id="autoRF" style="display:inline-block; width: 23%; text-align:right; max-width: 235px;"> -->
+<div id="autoRF" style="display:none; width: 23%; text-align:right; max-width: 235px;">
+        <div class=legend_element id="refreshDIV" style="display: none;" title="The Auto Update feature allows the user to determine if the page data is automatically updated.">
+	<input type="checkbox" name="refreshbox" id="refreshCB" checked="checked" value="previous" onclick="javascript:updateRefresh()"/>
+        <label for="refreshCB">Auto Update</label>
+        <input type="text" name="refreshvalue" id="refreshTB" style="width: 25px; height: 10px; text-align: right;" value="0" onkeypress='return event.charCode >= 48 && event.charCode <= 57' onchange="javascript:updateRefresh()"> min
+        </div>
+	<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+	<!--<input type="text" name="daystoshow" id="daystoshowTB" size=2 value="7"/><label for="daystoshowTB">&nbsp;# Days to Show</label> -->
+</div> <!-- id="autoRF" -->
+<!--    </form> -->
+
+
+<!--<div id="mapcontainer" style="width: 845px; height:450px;">-->
+<div id="mapcontainer">
+
+
+
+    <!-- ESRI Map -->
+	<div data-dojo-type="dijit.layout.BorderContainer"
+	      data-dojo-props="design:'headline',gutters:false"
+	     style="width: 100%; height: 100%; margin: 0;">
+
+            <div id="map_disp" 
+		data-dojo-type="dijit.layout.ContentPane"
+       		data-dojo-props="region:'center', showButtons:'true', value:0, minimum:0, maximum:100, discreteValues:101, intermediateChanges:true"
+		style="width: 100%; height: 450px; position:relative;">
+			<div id="BasemapToggle"></div>
+<!--                        <div id="quakeLoading" style="position:absolute; right:670px; top:5px; z-index:100; background-color: grep; display: none;">
+                             <span style="color: white; font-size:12px;";>Loading Quake Icons</span><img id="quakeImg" src="images/progress_bar.gif" height="5" width="50" />
+                        </div>
+                        <div id="alertLoading" style="position:absolute; right:670px; top:5px; z-index:100; background-color: grep; display: none;">
+                             <span style="color: white; font-size:12px;";>Loading Alert Layer</span><img id="quakeImg" src="images/progress_bar.gif" height="5" width="50" />
+                        </div>
+-->
+
+                        <div style="position:absolute; top:5px; z-index:100; align:left; width: 700px;">
+                           <div id="quakeLoading" style="background-color: grep; display: none;">
+                                <span style="color: white; font-size:12px;">Loading Earthquake Layer</span><img id="quakeImg" src="images/progress_bar.gif" height="5" width="50" />
+                           </div>
+                           <div id="alertLoading" style="background-color: grep; display: none;">
+                                <span style="color: white; font-size:12px;">Loading Alert Layer</span><img id="quakeImg" src="images/progress_bar.gif" height="5" width="50" />
+                           </div>
+                           <div id="quakeError" style="background-color: grep; display: none;">
+                                <span style="color: white; font-size:12px;">Earthquake Layer failed to load</span>
+                           </div>
+                           <div id="alertError" style="background-color: grep; display: none;">
+                                <span style="color: white; font-size:12px;">Alerts/Threats Layer failed to load</span>
+                           </div>
+                        </div>
+                        <div class="zoomto-control leaflet-control" style="position:absolute; right:8px; top:5px; z-index:100; background-color: grep;">
+                             <select id="zoomto-control-list-id" class="zoomto-control-list">
+                                  <option value="default">Default View</option>
+                                  <option value="alaska">Alaska</option>
+                                  <option value="hawaii">Hawaii</option>
+                                  <option value="guam">Guam/CNMI</option>
+                                  <option value="amsoa">American Samoa</option>
+                                  <option value="caribbean">Caribbean</option>
+                                  <option value="northam">North America</option>
+                                  <option value="southam">South America</option>
+                             </select>
+                        </div>
+
+
+		<img id="loadingImg" src="images/loader.gif" height="50" width="50" style="position:absolute; right:400px; top:200px; z-index:100;" />
+		
+<!--		<div class="slider" id="slider" title= "Adjust slider right to see older quakes (default 7 days)" >
+		    <div id="sliderOpacity">
+		    </div> 
+		</div> -->
+
+	    </div>
+        </div>
+
+</div> <!-- mapcontainer -->
+
+
+ 
+
+
+
+<br/>
+<div id=legend>
+
+<div class=legend_element style="width:100%; max-width: 1024px;">
+<div id="usca" style="display:inline-block; width:16em;text-align:center;">
+<div class=legend_element title="A tsunami warning is issued when a tsunami with the potential to generate widespread inundation is imminent, expected, or occurring. Warnings alert the public that dangerous coastal flooding accompanied by powerful currents is possible and may continue for several hours after initial arrival. Warnings alert emergency management officials to take action for the entire tsunami hazard zone. Appropriate actions to be taken by local officials may include the evacuation of low-lying coastal areas and the repositioning of ships to deep waters when there is time to safely do so. Warnings may be updated, adjusted geographically, downgraded, or canceled based on updated information and analysis." style="display:inline-block;">
+<a class="warnbox" ></a>&nbsp;Warning</div>
+
+<div class=legend_element title="A tsunami advisory is issued when a tsunami with the potential to generate strong currents or waves dangerous to those in or very near the water is imminent, expected, or occurring. The threat may continue for several hours after initial arrival, but significant inundation is not expected for areas under an advisory. Appropriate actions to be taken by local officials may include closing beaches, evacuating harbors and marinas, and the repositioning of ships to deep waters when there is time to safely do so. Advisories may be updated, adjusted geographically, upgraded to a warning, or canceled based on updated information and analysis."  style="display:inline-block;"><a class="advbox"></a>&nbsp;Advisory</div>
+
+<div class=legend_element title="A tsunami watch is issued when a tsunami may later impact the watch area. The watch may be upgraded to a warning or advisory or canceled based on updated information and analysis. Emergency management officials and the public should prepare to take action."  style="display:inline-block;"><a class="watchbox"></a>&nbsp;Watch</div>
+<br>
+<hr size="1" align="left">
+<a style="color:black;">U.S / Canada</a>
+</div> <!-- usca -->
+
+<div id="int" style="display:inline-block;  width:6em; text-align:center;">
+<div class=legend_element title="A tsunami threat message is issued to national authorities when a tsunami may affect their coasts. It describes the tsunami threats according to the potential hazard and impact to people, structures, and ecosystems on land or in nearshore marine environments. National authorities will determine the appropriate level of alert for each country and may issue additional or more refined information and instructions. Threat messages may be updated based on new information, data and analysis."><a class="threatbox"></a>&nbsp;Threat</div>
+<!--<td><a class="tablinks"><img src="images/linkicon.png" alt="More information available by clicking again" class="Inavup" border="0"/>Link</a></td>-->
+<br>
+
+<hr size="1">
+
+<a style="color:black;">International</a>
+
+</div> <!-- int -->
+
+
+<div class=legend_element title="This icon indicates the location of earthquakes meeting warning center criteria. The color of each individual icon corresponds with the greatest estimated danger currently posed by that earthquake. A green icon indicates that an information statement has been issued OR an event has ended." style="display:inline-block;  width:9em; vertical-align:top; text-align:center;">
+<img style="" src="images/earthquake-grn.png" class="Inavup" alt="Earthquake Icon" />Earthquake
+</div>
+<div style="display:inline-block; text-align:right;  width:calc(100% - 33em); vertical-align:top;">
+<div class=legend_element style="display:inline-block;">
+<a href="?page=help" target="_blank">Map FAQ</a>
+<br/><br/>
+<a href="http://earthquake.usgs.gov/" target="_blank">More earthquake information</a>
+</div>
+</div>
+
+</div>
+</div> <!-- end of id=legend div -->
+
+
+
+
+
+
+
+
+  <!--    	<a id="obsFcstLink" title="The Observations and Forecasts link goes to a page that includes information about each event, including source location, magnitude, depth, origin time, and message issue time. Observations (observed time and height) and forecasts (predicted height and arrival times) are provided when available. " style="padding-left:1em;" href="php/obs1.php"><img src="images/icon_waves_sm.png" class="Inavup" alt="Tide observations page" border="0"/>
+	Observations &amp; Forecasts</a>
+-->
+  
+<!-- ____________________________________________________________________________________________________________________________-->
+<!-- IF previous show Energy Map and Travel Time Map links below map -->
+ 
+<!-- ___________________________________________________________________________________________________________________________ -->
+
+     <!--	  <a id="capLink" style="padding-left:1em;" title="The CAP (Common Alerting Protocol) file provides information on the tsunami message in a format intended for use by those involved with emergency message transmission." href="/events/xml/PAAQCAP.xml" ><img src="images/cap_icon.png" width ="20" height="20" class="Inavup" alt="CAP File" border="0"/>CAP File</a>
+	  <a id="texLink" style="padding-left:1em;" title="The TEX (Tsunami Event XML) file is intended for those who need to automate tsunami information dissemination." href="/events/xml/PAAQTEX.xml" ><img src="images/TEX_icon.png" width ="20" height="20" class="Inavup" alt="TEX File" border="0"/>TEX File</a>
+-->
+	
+
+<hr>
+
+
+          <div id="sidebar" style="max-height: 200px; width: 99%; overflow: scroll; overflow-x: hidden;">
+             <ul id="sidebar-list"></ul> <!-- tags will be inserted here by JS -->
+           </div>
+
+
+<!-- ___________________________________________________________________________________________________________________________ --> 
+
+<!-- _____________________________________________________________________________________________________________________________ --> 
+<!-- Build the Previous Events Table DIV and call the function writeTable to build the table                                       -->
+<hr>
+
+      <div align="left" style="display:inline-block; width: 99%;" position="relative"><b>Previous 40 Tsunami Messages</b></div>
+      <div id="prevEvents" align="left">
+      </div> <!-- end of- <div id="prevEvents"> -->
+</div> <!-- content -->
+<!-- _____________________________________________________________________________________________________________________________ -->
+<!-- _____________________________________________________________________________________________________________________________ -->
+<!-- _____________________________________________________________________________________________________________________________ -->
+<!-- _____________________________________________________________________________________________________________________________ -->
+
+<script type="text/javascript">
+//<![CDATA[
+<!-- Hide JavaScript...
+
+ $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'otime', 
+        is: function(s) {
+            return false; 
+        }, 
+        format: function(s, table, cell, cellIndex) { 
+           s = cvtLocalOrUTC($.trim(s));
+           s=s.replace(/ /g,"").replace(/-/g,"").replace(/:/g,"");
+           s=$.tablesorter.formatFloat(s);
+	   return s;
+        }
+	, type: "numeric" 
+    });
+
+ $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'itime', 
+        is: function(s) {
+	 //return /\d{1,2}\.\d{1,2}\.\d{1,4} \d{1,2}:\d{1,2}:\d{1,2}/.test(s); 
+            // return false so this parser is not auto detected 
+            return false; 
+        }, 
+        format: function(s, table, cell, cellIndex) { 
+//           s = cvtLocalOrUTC($.trim(s)); 
+           s=s.replace(/ /g,"").replace(/-/g,"").replace(/:/g,"");
+           s=$.tablesorter.formatFloat(s);
+	   return s;
+        }
+	, type: "numeric" 
+    });
+
+
+ $.tablesorter.addParser({
+	id: 'depth',
+	is: function(s) {
+		return false;
+	},
+	format: function(s) {
+		s=s.replace("(Mi.)","");
+		return $.tablesorter.formatFloat(s);
+	}
+	, type: "numeric"
+    }); 
+
+ $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'lat', 
+        is: function(s) {
+            return false; 
+        }, 
+        format: function(s, table, cell, cellIndex) { 
+           s = latLon2Float($.trim(s)); // 
+           s=$.tablesorter.formatFloat(s);
+	   return s;
+        }
+	, type: "numeric" 
+    });
+
+ $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'lon', 
+        is: function(s) {
+            return false; 
+        }, 
+        format: function(s, table, cell, cellIndex) { 
+           s = latLon2Float($.trim(s)); // 
+           s=$.tablesorter.formatFloat(s);
+	   return s;
+        }
+	, type: "numeric" 
+    });
+
+     
+$(document).ready(function() 
+{ 
+
+
+            $("#myTable").tabelize({
+		onRowClick : self.rowClicker,
+    	        fullRowClickable :true,
+                onBeforeRowClick :null,
+                onAfterRowClick :null,
+                onReady :null
+            });	       
+
+        $("#myTable").tablesorter( {
+          dateFormat : "yyyy-mm-dd hh:mm:ss.s",
+	        sortList: [[7,1]],
+		headers: {0:{sorter: 'otime'}
+		         ,1:{sorter: 'itime'}
+			 ,3:{sorter: 'depth'}
+                         ,4:{sorter: 'lat'}
+                         ,5:{sorter: 'lon'}
+                         //,6:{sorter: false}
+                         //,7:{sorter: 'itime'}
+                         ,8:{sorter: false}
+                         ,9:{sorter: false}
+                         ,10:{sorter: false}
+                         ,11:{sorter: false}
+                         }
+
+            });
+
+ var scnWidth= document.documentElement.clientWidth;
+ var viewportmeta = document.querySelector("meta[name=viewport]");
+    if( scnWidth > 845) {
+         viewportmeta.content = 'width=device-width, initial-scale=1.0, user-scalable=1';
+    }
+    else if( scnWidth > 650) {
+         viewportmeta.content = 'width=device-width, initial-scale=0.7, user-scalable=1';
+    }
+    else if( scnWidth > 500) {
+         viewportmeta.content = 'width=device-width, initial-scale=0.59, user-scalable=1';
+    }
+    else if( scnWidth > 400) {
+         viewportmeta.content = 'width=device-width, initial-scale=0.4, user-scalable=1';
+    }
+    else {
+         viewportmeta.content = 'width=device-width, initial-scale=0.35, user-scalable=1';
+    }
+
+
+//	cvtLocalOrUTC('otime');
+
+	// Update the table header
+//	$("#myTable tr").find('th:nth-child(1)').text('Origin Time (' + getLocale() + ')');         
+
+}); 
+// eof of $(document).ready
+
+function doReady() 
+{ 
+
+
+            $("#myTable").tabelize({
+		onRowClick : self.rowClicker,
+    	        fullRowClickable :true,
+                onBeforeRowClick :null,
+                onAfterRowClick :null,
+                onReady :null
+            });	       
+
+        $("#myTable").tablesorter( {
+          dateFormat : "yyyy-mm-dd hh:mm:ss.s",
+	        sortList: [[0,1]],
+	        headers: {0:{sorter: 'otime'}
+			 ,2:{sorter: 'depth'}
+                         ,3:{sorter: 'lat'}
+                         ,4:{sorter: 'lon'}
+                         //,6:{sorter: false}
+                         //,7:{sorter: 'itime'}
+                         ,8:{sorter: false}
+                         ,9:{sorter: false}
+                         ,10:{sorter: false}
+                         ,11:{sorter: false}
+                         }
+
+            });
+
+/*
+ var scnWidth= document.documentElement.clientWidth;
+    if( scnWidth > 845) {
+         document.querySelector("meta[name=viewport]").setAttribute(
+          'content', 
+          'width=device-width, initial-scale=1.0, user-scalable=1');
+    }
+    else if( scnWidth > 650) {
+         document.querySelector("meta[name=viewport]").setAttribute(
+          'content', 
+          'width=device-width, initial-scale=0.7, user-scalable=1');
+    }
+    else if( scnWidth > 500) {
+         document.querySelector("meta[name=viewport]").setAttribute(
+          'content', 
+          'width=device-width, initial-scale=0.59, user-scalable=1');
+    }
+    else if( scnWidth > 400) {
+         document.querySelector("meta[name=viewport]").setAttribute(
+          'content', 
+          'width=device-width, initial-scale=0.47, user-scalable=1');
+    }
+    else {
+         document.querySelector("meta[name=viewport]").setAttribute(
+          'content', 
+          'width=device-width, initial-scale=0.35, user-scalable=1');
+    }
+*/
+//	cvtLocalOrUTC('otime');
+
+	// Update the table header
+//	$("#myTable tr").find('th:nth-child(1)').text('Origin Time (' + getLocale() + ')');         
+
+
+} 
+// eof of $(document).ready
+
+
+
+function latLon2Float(element)
+{
+   var negFactor = 1;
+   if((element.indexOf("S") > -1) || (element.indexOf("W") > -1))
+    {
+       negFactor = -1;
+    }
+    
+    element=element.replace(/N/g,"").replace(/S/g,"").replace(/W/g,"").replace(/E/g,"").replace(/$Deg/g,"");
+    negFactor = negFactor * (parseFloat(element));
+  return $.trim(negFactor);
+}
+
+function cvtLocalOrUTC(utc)
+{
+   var isUTC = false;
+   var offs = new Date().getTimezoneOffset();
+   if (offs === 0)  // UTC
+     {
+      isUTC = true; 
+     }
+
+   var d = cvtParseDate(utc,isUTC); 
+   //return d.format('m-d-Y H:i:s');
+   return d.format('Y-m-d H:i:s');
+   //return d.format('m-d-Y H:i:s');
+}
+
+function getLocale()
+{
+ var d = new Date();
+ return 'GMT' + (-d.getTimezoneOffset() < 0 ? '-' : '+') +
+        (Math.abs(d.getTimezoneOffset() / 60) < 10 ? '0' : '') +
+        (Math.abs(d.getTimezoneOffset() / 60)) + ':00'; 
+}
+
+
+function cvtParseDate(utc, isUTC)
+{
+   //var tmonth = utc.substring(5,7);
+   var tmonth = utc.substring(0,2);
+   //var tday = utc.substring(8,10);
+   var tday = utc.substring(3,5);
+   //var tyear = utc.substring(0,4);
+   var tyear = utc.substring(6,10);
+   //var thour = utc.substring(11,13);
+   var thour = utc.substring(11,13);
+   //var tmin = utc.substring(14, 16);
+   var tmin = utc.substring(14, 16);
+   //var tsec = utc.substring(17, 19);
+   var tsec = utc.substring(17, 19);
+
+
+   if(!isUTC)
+    {
+      return new Date(Date.UTC(tyear,(tmonth-1),tday,thour,tmin,tsec));
+     }
+   else
+    {
+     return new Date(tyear,(tmonth-1),tday,thour,tmin,tsec);
+    }
+}
+
+
+function struni(input) {
+    function pad_four(input) {
+        var l = input.length;
+        if (l == 0) return '0000';
+        if (l == 1) return '000' + input;
+        if (l == 2) return '00' + input;
+        if (l == 3) return '0' + input;
+        return input;
+    }
+    var output = '';
+    for (var i = 0, l = input.length; i < l; i++)
+        output += '\\u' + pad_four(input.charCodeAt(i).toString(16));
+    return output;
+}
+
+
+// ---------------------------------------------------------------------------------
+// Function to switch to the selected (Warning/Advisory/Watch/Threat/Info) Tab
+function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// ---------------------------------------------------
+//		$(document).ready(function(){
+// Expand/Collapse news item		    
+		    $(".buttons").click(function () {
+		    var divname= this.id; 
+		      $("#Text"+divname).toggle("slow", function (){
+                      		if($("#Text"+divname).is(':visible'))
+				{
+					document.getElementById(divname).value="-";					
+					$(divname).value="-";
+				}
+		      		else
+				{
+					document.getElementById(divname).value="+";
+					$(divname).value="+";
+				}
+		    		});
+		    });
+		
+//		  });
+
+
+
+
+// End Hiding -->
+ //]]>
+</script>
+
+
+<script type="text/javascript">var twc = [];</script> 		<script type="text/javascript" src="/events/js/PAAQWEAK51.js"></script>
+		<script type="text/javascript"> twc.push(PAAQWEAK51);</script>
+		<script type="text/javascript" src="/events/js/PAAQWEAK53.js"></script>
+		<script type="text/javascript"> twc.push(PAAQWEAK53);</script>
+		<script type="text/javascript" src="/events/js/PAAQWEXX32.js"></script>
+		<script type="text/javascript"> twc.push(PAAQWEXX32);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEPA40.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEPA40);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEPA42.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEPA42);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEHW40.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEHW40);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEHW42.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEHW42);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEZS40.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEZS40);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEZS42.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEZS42);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEGM40.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEGM40);</script>
+		<script type="text/javascript" src="/events/js/PHEBWEGM42.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWEGM42);</script>
+		<script type="text/javascript" src="/events/js/PHEBWECA40.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWECA40);</script>
+		<script type="text/javascript" src="/events/js/PHEBWECA41.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWECA41);</script>
+		<script type="text/javascript" src="/events/js/PHEBWECA42.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWECA42);</script>
+		<script type="text/javascript" src="/events/js/PHEBWECA43.js"></script>
+		<script type="text/javascript"> twc.push(PHEBWECA43);</script>
+		<script type="text/javascript" src="/events/js/PHEB.js"></script>
+		<script type="text/javascript"> twc.push(PHEB);</script>
+
+
+	<script type="text/javascript" src="/events/js/previous.js"></script>
+	
+
+
+<!--<script type="text/javascript" src="/events/js/esri.js"></script>-->
+<script type="text/javascript" src="/js/esri.js"></script>
+
+
+<!-- ++++++++++ -->
+
+<!--</div>--> <!-- block-block-3 -->
+</div> <!-- main_2col -->
+
+<!--end main content-->
+
+<div style="clear:both"></div>
+<!-- footer.inc start February 11 2025 16:51:46 -->
+<div id="footer">
+<hr class="footer" />
+ 
+<div id="footer1">
+<a  target="_blank" href="http://www.usa.gov/"><img src="/images/usagov_logo.gif" width="110" height="30" class="img" alt="USAGov.gov is the U.S. government's official web portal" /></a></div>
+
+<div id="footer2">
+<a href="http://www.commerce.gov" target="_blank"><span class="gray">US Dept of Commerce</span></a><br />
+Page Owner: National Tsunami Warning Center<br />
+910 S. Felton St.<br />
+Palmer, AK 99645 USA<br />
+Phone:907-745-4212 / FAX:907-745-6071<br />
+Contact Us: <a  target="_blank" href="mailto:ntwc@noaa.gov?subject=Web site feedback">ntwc@noaa.gov</a>
+<a  target="_blank" href="/?page=privacy_statement"><span class="gray">Privacy Act Statement</span></a><br />
+Page last modified: <span id="lastModified"><script type="text/javascript">document.writeln (document.lastModified);</script></span>
+</div>
+
+<div id="footer3">
+ 
+<ul>
+<li><a  target="_blank" href="http://www.weather.gov/disclaimer"><span class="gray">Disclaimer</span></a></li>
+
+<li><a  target="_blank" href="http://www.cio.noaa.gov/services_programs/info_quality.html"><span class="gray">Information Quality</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/credits"><span class="gray">Credits</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/glossary/"><span class="gray">Glossary</span></a></li>
+</ul></div>
+<div id="footer4"><ul>
+<li><a  target="_blank" href="http://weather.gov/privacy.php"><span class="gray">Privacy Policy</span></a></li>
+<li><a  target="_blank" href="http://www.noaa.gov/foia-freedom-of-information-act"><span class="gray">Freedom of Information Act</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/about"><span class="gray">About Us</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/careers/"><span class="gray">Career Opportunities</span></a></li>
+</ul>
+
+</div>
+<div id="tag">Proudly brought to you by NOAA - National Weather Service</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/federated-analytics-min.js"></script>
+<script type="text/javascript" src="/js/togglemenu.js"></script>
+
+<!--<script type="text/javascript" src="/events/js/PAAQ.js"></script> -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+<!-- Hide JavaScript...
+
+
+// function to display dialog and send to non Gov Page
+
+function openNonGovPage(nURL) 
+{   
+  alert("Warning: You are now leaving the National Weather Service\n"+          
+        "destination web site ::-- \n" + nURL + "\n\n" +          
+        "This link does not constitute an endorsement by the NWS of any information, products or services on this site.\n\n");      
+  window.open (nURL); 
+}
+
+
+//
+// Functions set color on menu items when the pointer is over a menu item
+//
+
+function setNavMenuElements(node) 
+{  
+    if (node.nodeName == "li") 
+      {
+        node.onmouseover=function(){this.className="over-"+this.className;}
+        node.onmouseout=function(){this.className=this.className.replace("over-", "");}
+      }
+    for(var child=node.firstChild; child!=null; child=child.nextSibling){setNavMenuElements(child);}
+}
+
+/**
+ * Function: initNavList()
+ * Set up handler to change color on mouseover/mouseout
+ * See: leftHandMenu.inc ('nav')
+ *
+ */
+
+/*var initNavList = function() 
+  {  
+    var  navRoot=null;
+
+    if (document.all && document.getElementById)
+     {  
+        navRoot=document.getElementById("nav");
+        if (navRoot)
+          { 
+            for (i=0;i<navRoot.childNodes.length;i++){setNavMenuElements(navRoot.childNodes[i]);}
+          }
+     }
+}*/
+
+//window.onload = function() { startList(); initialize(); }; // moved to end because of Google Chrome
+
+// End Hiding -->
+ //]]>
+</script>
+
+
+
+
+<!-- footer.inc end February 11 2025 16:51:46 -->
+<!-- ARH no support ?php ob_end_flush(); ? -->
+
+
+</div> <!-- container_2col -->
+</div> <!-- maincontainer -->
+
+
+
+</body>
+</html>
+
+
+
